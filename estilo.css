@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.console-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+}
+
+.console-container p {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin: 0;
+    padding: 2rem;
+}
+
+.game-container {
+    text-align: center;
+}
+
+#scene {
+    width: 600px;
+    height: 400px;
+    border: 2px solid #333;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: #fff;
+}
+
+.stick-figure {
+    position: absolute;
+    width: 20px;
+    height: 60px;
+    background-color: #000;
+    top: 70%;
+    border-radius: 5px;
+}
+
+.stick-figure:before, .stick-figure:after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 40px;
+    background-color: #000;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.stick-figure:before {
+    height: 60px;
+    width: 20px;
+    border-radius: 50%;
+    top: -20px;
+}
+
+.stick-figure.lover1 {
+    left: 20%;
+}
+
+.stick-figure.lover2 {
+    left: 60%;
+}
+
+#nextButton, #startButton, #continueButton {
+    padding: 10px 20px;
+    background-color: #ae21b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#nextButton:hover, #startButton:hover, #continueButton:hover {
+    background-color: #8319cf;
+}
